@@ -29,9 +29,9 @@ There are several ways to access the tool.
 If you use Chrome, your best option would be to download the [Chrome extension](#chrome-extension). For other browsers, you may want to use the [bookmarklet](#bookmarklet).
 
 ### Online tool
-The project is [available online](https://useful-forks.github.io/) for free thanks to GitHub Pages.
+The project is [available online](https://devnoname120.github.io/useful-forks) for free thanks to GitHub Pages.
 
-You can query a repository directly with the URL. Click this link to get an example: https://useful-forks.github.io/?repo=payne911/PieMenu.
+You can query a repository directly with the URL. Click this link to get an example: https://devnoname120.github.io/useful-forks?repo=payne911/PieMenu
 
 Below is a recording of what a scan would look like:
 
@@ -57,7 +57,7 @@ Please note that this project will not be updating the [GitHub Releases](https:/
 The online tool can be used as a [bookmarklet](https://en.wikipedia.org/wiki/Bookmarklet). To add one manually, press `Ctrl+D` to create a new bookmark and add this code in the URL field:
 
 ```js
-javascript:!function(){if(m=window.location.href.match(/github\.com\/([\w.-]+)\/([\w.-]+)/),m){window.open(`https://useful-forks.github.io/?repo=${m[1]}/${m[2]}`)}else window.alert("Not a GitHub repo")}();
+javascript:!function(){if(m=window.location.href.match(/github\.com\/([\w.-]+)\/([\w.-]+)/),m){window.open(`https://devnoname120.github.io/useful-forks?repo=${m[1]}/${m[2]}`)}else window.alert("Not a GitHub repo")}();
 ```
 
 When you're viewing a GitHub repo in your browser, you can press the newly created bookmarklet and this will open the online tool for the repo in a new tab.

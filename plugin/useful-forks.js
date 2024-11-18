@@ -1,7 +1,7 @@
 function getRepoUrl() {
   const pathComponents = window.location.pathname.split("/");
   const user = pathComponents[1], repo = pathComponents[2];
-  return `https://useful-forks.github.io/?repo=${user}/${repo}`;
+  return `https://devnoname120.github.io/useful-forks?repo=${user}/${repo}`;
 }
 
 function setBtnUrl() {

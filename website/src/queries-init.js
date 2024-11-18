@@ -1,4 +1,4 @@
-const SELF_URL = "https://useful-forks.github.io/";
+const SELF_URL = "https://devnoname120.github.io/useful-forks";
 
 const JQ_REPO_FIELD  = $('#repo');
 const JQ_FILTER_FIELD = $('#filter');
@@ -37,7 +37,7 @@ const EXAMPLE_LINK_1 = `<a href="${buildAutoQueryURL('payne911/PieMenu')}"
                            onclick="ga_shortExampleLink();">payne911/PieMenu</a>`;
 const EXAMPLE_LINK_2 = `<a href="${buildAutoQueryURL('https://github.com/payne911/PieMenu')}"
                            onclick="ga_fullExampleLink();">https://github.com/payne911/PieMenu</a>`;
-const BODY_REPO_LINK = `<a href="${buildGithubRepoURL('useful-forks/useful-forks.github.io')}"
+const BODY_REPO_LINK = `<a href="${buildGithubRepoURL('devnoname120/useful-forks')}"
                            onclick="ga_bodyRepoLink();">the GitHub project</a>`;
 const LANDING_PAGE_INIT_MSG = "<h1 class='title'>Introducing:</h1>"
     + "<img src='assets/useful-forks-banner.png' alt='useful-forks banner' width='500'/><br/><br/>"
