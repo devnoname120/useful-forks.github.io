@@ -3,7 +3,6 @@ const JQ_SETTINGS_CSV    = $('#uf_settings_csv');
 
 
 function openSettingsDialog() {
-  ga_openSettings();
   setCsvDisplay();
   JQ_SETTINGS_POPUP.addClass('is-active');
 }

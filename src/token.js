@@ -8,17 +8,14 @@ let shouldReconstructOctokit = true;
 
 
 function openTokenDialog() {
-  ga_openToken();
   JQ_TOKEN_POPUP.addClass('is-active');
   JQ_TOKEN_FIELD.focus();
 }
 function closeTokenDialog() {
-  ga_closeToken();
   JQ_TOKEN_POPUP.removeClass('is-active');
   JQ_REPO_FIELD.focus();
 }
 function saveTokenBtnClicked() {
-  ga_saveToken();
   const INPUT_TOKEN = JQ_TOKEN_FIELD.val();
   localStorage.setItem(GITHUB_ACCESS_TOKEN_STORAGE_KEY, INPUT_TOKEN);
   LOCAL_STORAGE_GITHUB_ACCESS_TOKEN = INPUT_TOKEN;
