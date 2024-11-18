@@ -79,8 +79,8 @@ function buildGithubRepoURL(repo) {
 }
 
 function getForkButtonLink(qualifier, full_name) {
-  return `<a href="${buildAutoQueryURL(full_name)}" 
-             title="This will launch a (more extensive) scan for the specified repository. The 'Source' is the root project of the whole fork tree, whereas the 'Parent' is the immediate parent. (Therefore, the Source can be the Parent.)" 
+  return `<a href="${buildAutoQueryURL(full_name)}"
+             title="This will launch a (more extensive) scan for the specified repository. The 'Source' is the root project of the whole fork tree, whereas the 'Parent' is the immediate parent. (Therefore, the Source can be the Parent.)"
              class="button is-small is-dark is-outlined">
              <b>${qualifier}:&nbsp;&nbsp;</b>
              <span class="is-family-monospace">${full_name}</span>
@@ -169,7 +169,7 @@ function getQueryOrDefault(defaultVal) {
 
   const val = JQ_REPO_FIELD.val();
 
-  const isShorthand = /^[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+$/;
+  const isShorthand = /^[\w\.-]+\/[\w\.-]+$/;
   if (isShorthand.test(val)) {
     return val;
   } else {
