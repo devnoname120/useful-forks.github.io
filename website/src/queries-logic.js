@@ -477,7 +477,6 @@ function initiate_search() {
   let len = queryValues.length;
   if (len < 2) {
     setMsg('Please enter a valid query: it should contain two strings separated by a "/"');
-    ga_faultyQuery(queryString);
     return; // abort
   }
 
@@ -492,7 +491,6 @@ function initiate_search() {
   if (history.replaceState) {
     history.replaceState({}, document.title, `?repo=${user}/${repo}`); // replace current URL param
   }
-  ga_searchQuery(user, repo);
   initial_request(user, repo);
 }
 
