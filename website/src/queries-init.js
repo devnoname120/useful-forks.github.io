@@ -177,6 +177,10 @@ function getQueryOrDefault(defaultVal) {
   }
 }
 
+function setQuery(query) {
+  JQ_REPO_FIELD.val(query);
+}
+
 function hideFilterContainer() {
   JQ_FILTER_CONTAINER.hide();
 }
