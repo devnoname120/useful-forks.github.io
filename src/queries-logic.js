@@ -261,7 +261,7 @@ function update_table_data(responseData, user, repo, parentDefaultBranch) {
         datum['pushed_at'] = getOnlyDate(currFork.pushed_at);
         TABLE_DATA.push(datum);
         if (TABLE_DATA.length > 1) showFilterContainer();
-        
+
         update_table_trying_use_filter();
       }
     };
@@ -345,7 +345,7 @@ function updateFilterFunction() {
     }
     conditionObj[attribute] = { operator, value };
   }
-  
+
   IS_USEFUL_FORK = (datum) => {
     for (const [attribute, { operator, value }] of Object.entries(conditionObj)) {
       const attrValue = datum[attribute];
@@ -500,7 +500,6 @@ function initiate_search() {
 
   if (!queryValues) {
     setMsg('Please enter a valid query: it should contain two strings separated by a "/", or the full URL to a GitHub repo');
-    ga_faultyQuery(queryString);
     return; // abort
   }
 
